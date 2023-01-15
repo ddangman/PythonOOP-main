@@ -10,7 +10,7 @@ class Item:
         assert quantity >= 0, f"Quantity {quantity} is not greater or equal to zero!"
 
         # Assign to self object
-        self.__name = name
+        self.__name = name # double underscore to make attribute private. Single for read_only
         self.price = price
         self.quantity = quantity
 
